@@ -1,9 +1,12 @@
 *{
     margin: 0;padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: black;
+    color: white;
+   
 }
 @media  (max-width:1024px){
     body{
@@ -487,14 +490,14 @@ nav .logo ul li a{
 }
 /* About  */
 
-#About{
+#About,#Contect{
     margin: 10%;
-    color: white;
 }
-#About .context2{
+#About .context2,#Contect p,#Blog p{
     width: 50%;
+    text-align: justify;
 }
-#About .bg{
+ .bg{
     position: absolute;
     background-color: red;
     width: 2.5%;
@@ -503,17 +506,17 @@ nav .logo ul li a{
     margin-top: -0.5%;
 }
 
-#About h1{
+#About h1,#Contect h1,#Blog h1,#Course h1{
     position: relative;
 }
-#About .context2 p{
-    margin: 3% 0;
+ .context2 p,#Contect p{
+    margin: 1% 0;
 }
  .page1{
     position: absolute;
     right: 0;
 }
-#About .context2 hr{
+ .context2 hr,#Contect hr,#Blog hr{
     background-color: red;
     height: 3px;
     width: 15%;
@@ -521,7 +524,7 @@ nav .logo ul li a{
     border-style: none;
 }
 @media (max-width:480px){
-    #About .bg{
+    .bg{
         width: 2.5%;
         height: 3.5%;
         margin-left: -0.8%;
@@ -529,7 +532,7 @@ nav .logo ul li a{
     }
 }
 @media (max-width:330px){
-    #About .bg{
+   .bg{
         width: 2%;
         height: 2%;
         margin-left: -0.7%;
@@ -708,12 +711,14 @@ nav .logo ul li a{
     #About .cards{
         flex-direction: column;
     }
+    #About .cards .card{
+        padding: 2% 5%;
+    }
     #About .cards, .landings,#About .cards .card i{
         font-size: 0.5rem;
     }
     .landings{
         font-size: 0.3rem;
-
     }
     .cards p{
         font-size: 0.4rem;
@@ -722,5 +727,409 @@ nav .logo ul li a{
         padding: 5px 10px ;
         font-size: 0.35rem; 
     }
-   
  }
+ .ContactCard .card-1,.ContactCard .card-2{
+     display: flex;
+ }
+ .ContactCard .card-1 div{
+     width: 100%;
+     height: 200px;
+     background-color: red;
+     margin: 2% 5%;
+     padding:  3%;
+     text-align: center;
+     line-height: 30px;
+ }
+ .ContactCard .card-1 div img{
+     width: 50%;
+ }
+ .ContactCard .card-1 .non{
+    background-color: rgb(59, 58, 58);
+    padding-top: 5%;
+ }
+ @media (max-width:1024px){
+    .ContactCard{
+        font-size: 0.6rem;
+    } 
+    .ContactCard .card-1 div{
+        height: 150px;
+        line-height: 20px;
+    }
+ }
+ @media (max-width:900px){
+    .ContactCard{
+        font-size: 0.5rem;
+    } 
+    .ContactCard .card-1 div{
+        height: 150px;
+        line-height: 20px;
+    }
+ }
+ @media (max-width:750px){
+    .ContactCard{
+        font-size: 0.4rem;
+    } 
+    .ContactCard .card-1 div{
+        height: 120px;
+        line-height: 15px;
+    }
+ }@media (max-width:650px){
+    .ContactCard{
+        font-size: 0.4rem;
+    } 
+    .ContactCard .card-1 div{
+        height: 100px;
+        line-height: 15px;
+    }
+ }
+@media (max-width:650px){
+    .ContactCard .card-1 div{
+        height: 80px;
+        line-height: 13px;
+        font-size: 0.4rem;
+
+    }
+ }
+ @media (max-width:540px){
+    .ContactCard .card-1 div{
+        height: 80px;
+        line-height: 11px;
+        font-size: 0.35rem;
+
+    }
+ }
+ @media (max-width:410px){
+    .ContactCard .card-1 div{
+        height: 70px;
+        line-height: 9px;
+        font-size: 0.25rem;
+
+    }
+ }
+ @media (max-width:290px){
+    .ContactCard .card-1 div{
+        height: 50px;
+        line-height: 7px;
+        font-size: 0.2rem;
+    }
+ }
+ .bgText{
+     background-color: red;
+     padding: 5% 10%;
+     margin: 5% 0;
+     font-size: 2rem;
+ }
+ .bgText button{
+     margin-top: 2%;
+     margin-right: 5%;
+     padding: 15px 30px;
+     border-style: none;
+     border-radius: 10px;
+     color: red;
+     font-weight: 900;
+ }
+ .bgText button:last-child{
+     background-color: black;
+     color: white;
+ }
+ .bgText button:last-child span{
+     margin-left: 5px;
+ }
+ @media (max-width:990px){
+    .bgText{
+        font-size: 1.8rem;
+
+    }
+ }
+ @media (max-width:890px){
+    .bgText{
+        font-size: 1.6rem;
+
+    }
+ }
+ @media (max-width:800px){
+    .bgText{
+        font-size: 1.4rem;
+    }
+ }
+ @media (max-width:700px){
+    .bgText{
+        font-size: 1.2rem;
+    }
+    .bgText button{
+        padding: 10px 20px;
+        font-size: 1.2rem;
+
+    }
+ }
+ @media (max-width:600px){
+    .bgText{
+        font-size: 1rem;
+    }
+    .bgText button{
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+ }
+ @media (max-width:500px){
+    .bgText{
+        font-size:0.8rem;
+    }
+    .bgText button{
+        padding: 5px 10px;
+        font-size:0.8rem;
+    }
+ }
+ @media (max-width:400px){
+    .bgText{
+        font-size:0.6rem;
+    }
+    .bgText button{
+        padding: 3px 7px;
+        font-size:0.6rem;
+        border-radius: 2px;
+    }
+ }
+ @media (max-width:300px){
+    .bgText{
+        font-size:0.4rem;
+    }
+    .bgText button{
+        padding: 2px 6px;
+        font-size:0.4rem;
+    }
+ }
+
+ /* Blog  */
+
+ #Blog,#Course{
+     padding: 5% 10%;
+ }
+ #Blog p{
+     margin: 1% 0;
+ }
+ .intro {
+     line-height: 50px;
+ }
+ .intro h3{
+    color: rgb(131, 116, 116);
+ }
+ .intro  h3::before{
+     content: "";
+     position: absolute;
+     background-color: red;
+     height: 3px;
+     width: 5%;
+ }
+ .intro img{
+     float: right;
+     width:80px;
+     height: 80px;
+     border-radius: 50%;
+ }
+ #Blog .cards{
+     display: flex;
+ }
+ #Blog .cards div{
+     margin: 3% 2%;
+ }
+ #Blog .cards p{
+     width: 100%;
+     margin: 5% 0;
+     line-height: 20px;
+ }
+ #Blog .BlogFooter {
+     text-align: center;
+ }
+ #Blog .lines {
+     display: flex;
+    margin: 0 40%;
+
+ }
+ #Blog .lines div{
+     text-align: center;
+     align-items: center;
+     width: 50px;
+     height: 3px;
+    background-color: rgb(131, 116, 116);
+     margin: 0 3%;
+ }
+ #Blog .lines div:first-child{
+     background-color: red;
+ }
+  .BlogFooter button{
+     margin: 3% 0;
+     background-color: red;
+     padding: 15px 30px;
+     border-radius: 5px;
+     border-style: none;
+     color: white;
+     font-size: 1.3rem;
+ }
+ #Blog .BlogFooter button i{
+     padding-left: 20px;
+ }
+@media (max-width:800px){
+    .intro img{
+        width:70px;
+        height: 70px;
+    } 
+   .BlogFooter button{
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:800px){
+    .intro img{
+        width:70px;
+        height: 70px;
+    } 
+    .BlogFooter button{
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+    .intro {
+        line-height: 30px;
+    }
+}
+@media (max-width:670px){
+    .intro img{
+        width:60px;
+        height: 60px;
+    } 
+   .BlogFooter button{
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .intro {
+        line-height: 30px;
+    }
+    #Blog .cards p{
+        font-size: 0.8rem;
+
+    }
+}
+@media (max-width:550px){
+    .intro img{
+        width:50px;
+        height: 50px;
+    } 
+    .BlogFooter button{
+        padding: 10px 20px;
+        font-size: 0.6rem;
+    }
+    .intro {
+        line-height: 30px;
+    }
+    #Blog .cards p{
+        font-size: 0.6rem;
+        line-height: 15px;
+    }
+}
+@media (max-width:400px){
+    #Blog .cards{
+        flex-direction: column;
+        font-size: 0.6rem;
+    }
+    .intro  h3::before{
+        width: 15%;
+    }
+    .intro {
+        line-height: 25px;
+    }
+    #Blog .cards p{
+        line-height: 15px;
+    }
+}
+@media (max-width:300px){
+    #Blog .cards{
+        flex-direction: column;
+        font-size: 0.5rem;
+    }
+    .intro img{
+        width:40px;
+        height: 40px;
+    } 
+}
+#Course{
+    width: 60%;
+}
+#Course div:last-child{
+    margin: 5% 0;
+}
+footer{
+    margin: 5% 10%;
+}
+.footerTitle{
+    display: flex;
+}
+.footerTitle h1{
+    padding-top: 4%;
+}
+footer .icons img{
+    margin-right: 3%;
+}
+footer img{
+    width: 40px;
+}
+footer svg{
+    width: 60px;
+}
+.lists{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    line-height: 30px;
+}
+footer h4{
+    margin-bottom: 5%;
+}
+.lists li{
+    list-style: none;
+    
+}
+@media (max-width:750px){
+    .footerTitle h1{
+        font-size: 0.9rem;
+        margin-top: 5%;
+    }
+    footer svg{
+        width: 50px;
+    }
+    footer img{
+        width: 20px;
+    }
+    .lists{
+        line-height: 20px;
+    }
+}
+@media (max-width:600px){
+    .footerTitle h1{
+        font-size: 0.7rem;
+        margin-top: 6%;
+    }
+     footer svg{
+        width: 40px;
+    }
+    footer img{
+        width: 20px;
+    }
+    .lists{
+        line-height: 15px;
+    }
+}
+@media (max-width:400px){
+    .footerTitle h1{
+        font-size: 0.4rem;
+        margin-top: 7%;
+    }
+    footer svg{
+        width: 30px;
+    }
+    footer img{
+        width: 12px;
+    }
+    .lists{
+        line-height: 10px;
+    }
+}
